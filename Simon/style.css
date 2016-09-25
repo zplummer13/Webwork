@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Nunito';
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-user-select: none;
+}
+
+body {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	font-family: 'Nunito', sans-serif;
+	font-size: 24px;
+	/*
+	-webkit-perspective: 1000px;
+			perspective: 1000px;
+	*/
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+ 	-webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+    overflow-x: hidden;
+}
+
+#message {
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+}
+
+.start {
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+	padding: 10px 20px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 7%;
+	background-color: #ffb3ff;
+	-webkit-transition: border-radius 1s, background-color 1s; 
+    transition: border-radius 1s, background-color 1s;
+}
+
+.start:focus {
+	outline: 0;
+}
+
+.start:hover {
+	border-radius: 100%;
+	background-color: #ffccff;
+}
+
+.btn-container {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	background-color: #101010; 
+}
+
+.btn-container button {
+	padding: 60px 60px;
+	/*margin: 10px 10px;*/
+	margin-top: 18px;
+	margin-left: 18px;
+	margin-bottom: 5px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 7%; 
+}
+
+.btn-container button:focus {
+	outline: 0;
+}
+
+.btn-container button.green {
+	border-top-left-radius: 100%;
+	background-color: #009933;
+}
+
+.btn-container button.green:hover {
+	background-color: #00e64d!important;
+}
+
+.btn-container button.red {
+	border-top-right-radius: 100%;
+	background-color: #cc0000;
+}
+
+.btn-container button.red:hover {
+	background-color: #ff1a1a!important;
+}
+
+.btn-container button.blue {
+	border-bottom-left-radius: 100%;
+	background-color: #0052cc;
+}
+
+.btn-container button.blue:hover {
+	background-color: #3385ff!important;
+}
+
+.btn-container button.yellow {
+	border-bottom-right-radius: 100%;
+	background-color: #b3b300;
+}
+
+.btn-container button.yellow:hover {
+	background-color: #ffff33!important;
+}
+
+.project-title {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background-color: #707070;
+	padding-left: 3025px;
+	margin-left: -3000px;
+	padding-right: 3000px;
+	margin-right: -3000px;
+
+}
