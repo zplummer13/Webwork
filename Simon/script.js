@@ -13,9 +13,6 @@ window.onload = function() {
 	var state = setupArray[3];
 	var message = document.getElementById("message");
 
-	console.log(state);
-	console.log(round);
-
 	btnStart.addEventListener( 'click', function(event){
 		if (state == "Start") {
 			state = "Wait";
@@ -175,16 +172,13 @@ function compTurn(round, seq, state, message){
 	function myLoop() {
 		setTimeout(function (){
 			if (i % 2 == 0){
-				console.log(seq[i/2]);
 				illuminateButton(seq[i/2]);
 				i++;
-				console.log("i = " + i);
 				if (i/2 < round){
 					myLoop();
 				}
 				if (i/2 == round){
 					state = "Play";
-					console.log(state);
 					message.innerHTML = "Your turn";
 					deIlluminateButtons();
 					return state;
@@ -192,14 +186,12 @@ function compTurn(round, seq, state, message){
 			}
 			else{
 				i++;
-				console.log("i = " + i);
 				deIlluminateButtons();
 				if (i/2 < round){
 					myLoop();
 				}
 				else {
 					state = "Play";
-					console.log(state);
 					message.innerHTML = "Your turn";
 					return state;
 				}
@@ -244,10 +236,8 @@ function deIlluminateButtons(){
 };
 
 function checkButton(button, round, index, seq){
-	console.log("Checking button:" + button + " Against " + seq[index]);
 	if(button == seq[index]){
 		index = index + 1;
-		console.log("Correct! Index:" + index);
 		return index;
 	}
 	else {
